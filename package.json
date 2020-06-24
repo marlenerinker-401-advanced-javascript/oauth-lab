@@ -1,0 +1,36 @@
+{
+  "name": "oauth-lab",
+  "version": "1.0.0",
+  "description": "Our company has decided to integrate OAuth instead of managing user names and passwords internally. In order to make the best decision, we are creating small research teams to assess the suitability of various OAuth providers.",
+  "main": "index.js",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "superagent": "^5.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlenerinker-401-advanced-javascript/oauth-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marlenerinker-401-advanced-javascript/oauth-lab/issues"
+  },
+  "homepage": "https://github.com/marlenerinker-401-advanced-javascript/oauth-lab#readme"
+}

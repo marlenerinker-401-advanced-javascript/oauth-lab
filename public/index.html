@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Auth Test</title>
+</head>
+
+<body>
+  <main>
+
+    <a id="oauth" href="#">Login</a>
+
+  </main>
+
+  <script>
+
+    // let URL = "https://github.com/login/oauth/authorize";
+    let URL = "https://api.login.yahoo.com/oauth2/request_auth";
+
+    let options = {
+      client_id: 'dj0yJmk9RmRxR1RzaDQ3em84JmQ9WVdrOVEwMUJTV2RqTlRBbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdk',
+      redirect_uri: 'https://localhost:3000/oauth',
+      // scope: 'read:user',
+      response_type: "code",
+      // state: 'asldfjdfs' - not needed for yahoo
+    }
+
+    let QueryString = Object.keys(options).map((key) => {
+      return `${key}=` + encodeURIComponent(options[key]);
+    }).join("&");
+
+    let authURL = `${URL}?${QueryString}`;
+
+    let link = document.getElementById('oauth');
+    link.setAttribute('href', authURL);
+
+  </script>
+
+
+</body>
+
+</html>
